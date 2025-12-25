@@ -50,21 +50,37 @@ cd ai-product-gpt
 npm install
 ```
 
-3. Start the development server:
+3. (Optional) Create a `.env` file for your API key:
+```bash
+cp .env.example .env
+# Edit .env and add your Gemini API key
+```
+
+4. Start the development server:
 ```bash
 npm run dev
 ```
 
-4. Open your browser and navigate to `http://localhost:5173`
+5. Open your browser and navigate to `http://localhost:5173`
 
 ## 🎯 Usage
 
 1. Click "Get Started" on the landing page
-2. Enter your Gemini API key (or use the pre-filled one)
+2. Enter your Gemini API key (get a free one at [Google AI Studio](https://makersuite.google.com/app/apikey))
 3. Describe your product vision
 4. Specify your target audience
 5. Click "Generate PRD"
 6. Review, copy, or download your PRD
+
+### Getting Your API Key
+
+1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Sign in with your Google account
+3. Click "Create API Key"
+4. Copy your API key
+5. Paste it into the application when prompted
+
+**Note**: Your API key is only used in your browser session and is never stored or sent to any server other than Google's Gemini API.
 
 ## 📦 Deployment
 
@@ -82,13 +98,28 @@ npm run deploy
 
 Your app will be available at: `https://rakshita-jaiswal.github.io/ai-product-gpt`
 
-## 🔒 Security Note
+## 🔒 Security & Privacy
 
-⚠️ **Important**: The current implementation uses client-side API calls for simplicity. For production use:
-- Create a backend API to handle Gemini calls
-- Never expose API keys in frontend code
-- Implement rate limiting and authentication
-- Use environment variables for sensitive data
+### Current Implementation
+- API keys are entered by users and stored only in browser memory during the session
+- No API keys are committed to the repository
+- All API calls are made directly from the browser to Google's Gemini API
+- No data is stored on any intermediate servers
+
+### For Production Use
+⚠️ **Important**: For a production application, consider:
+- Creating a backend API to handle Gemini calls
+- Implementing user authentication
+- Adding rate limiting to prevent abuse
+- Using server-side environment variables
+- Implementing proper API key management
+- Adding usage monitoring and quotas
+
+### Environment Variables (Optional)
+You can optionally use environment variables for development:
+1. Copy `.env.example` to `.env`
+2. Add your API key: `VITE_GEMINI_API_KEY=your_key_here`
+3. The `.env` file is already in `.gitignore` and won't be committed
 
 ## 📁 Project Structure
 
