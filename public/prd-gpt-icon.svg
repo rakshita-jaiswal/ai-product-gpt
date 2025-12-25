@@ -1,0 +1,93 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circuit board background -->
+  <rect width="1200" height="1200" fill="#1e3a5f"/>
+  
+  <!-- Neural network nodes (left side) -->
+  <circle cx="200" cy="300" r="40" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  <circle cx="200" cy="450" r="40" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  <circle cx="200" cy="600" r="40" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  <circle cx="200" cy="750" r="40" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  <circle cx="200" cy="900" r="40" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  
+  <circle cx="300" cy="375" r="35" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  <circle cx="300" cy="525" r="35" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  <circle cx="300" cy="675" r="35" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  <circle cx="300" cy="825" r="35" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  
+  <!-- Neural network nodes (right side) -->
+  <circle cx="1000" cy="300" r="40" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  <circle cx="1000" cy="450" r="40" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  <circle cx="1000" cy="600" r="40" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  <circle cx="1000" cy="750" r="40" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  <circle cx="1000" cy="900" r="40" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  
+  <circle cx="900" cy="375" r="35" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  <circle cx="900" cy="525" r="35" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  <circle cx="900" cy="675" r="35" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  <circle cx="900" cy="825" r="35" fill="#1e3a5f" stroke="#d4af37" stroke-width="4"/>
+  
+  <!-- Connection lines (left) -->
+  <line x1="200" y1="300" x2="300" y2="375" stroke="#d4af37" stroke-width="3"/>
+  <line x1="200" y1="450" x2="300" y2="375" stroke="#d4af37" stroke-width="3"/>
+  <line x1="200" y1="450" x2="300" y2="525" stroke="#d4af37" stroke-width="3"/>
+  <line x1="200" y1="600" x2="300" y2="525" stroke="#d4af37" stroke-width="3"/>
+  <line x1="200" y1="600" x2="300" y2="675" stroke="#d4af37" stroke-width="3"/>
+  <line x1="200" y1="750" x2="300" y2="675" stroke="#d4af37" stroke-width="3"/>
+  <line x1="200" y1="750" x2="300" y2="825" stroke="#d4af37" stroke-width="3"/>
+  <line x1="200" y1="900" x2="300" y2="825" stroke="#d4af37" stroke-width="3"/>
+  
+  <!-- Connection lines (right) -->
+  <line x1="900" y1="375" x2="1000" y2="300" stroke="#d4af37" stroke-width="3"/>
+  <line x1="900" y1="375" x2="1000" y2="450" stroke="#d4af37" stroke-width="3"/>
+  <line x1="900" y1="525" x2="1000" y2="450" stroke="#d4af37" stroke-width="3"/>
+  <line x1="900" y1="525" x2="1000" y2="600" stroke="#d4af37" stroke-width="3"/>
+  <line x1="900" y1="675" x2="1000" y2="600" stroke="#d4af37" stroke-width="3"/>
+  <line x1="900" y1="675" x2="1000" y2="750" stroke="#d4af37" stroke-width="3"/>
+  <line x1="900" y1="825" x2="1000" y2="750" stroke="#d4af37" stroke-width="3"/>
+  <line x1="900" y1="825" x2="1000" y2="900" stroke="#d4af37" stroke-width="3"/>
+  
+  <!-- Circuit traces (top) -->
+  <line x1="400" y1="150" x2="450" y2="150" stroke="#6b8cae" stroke-width="2"/>
+  <circle cx="450" cy="150" r="8" fill="#d4af37"/>
+  <line x1="450" y1="150" x2="500" y2="150" stroke="#6b8cae" stroke-width="2"/>
+  <circle cx="500" cy="150" r="8" fill="#d4af37"/>
+  <line x1="500" y1="150" x2="550" y2="150" stroke="#6b8cae" stroke-width="2"/>
+  <circle cx="550" cy="150" r="8" fill="#d4af37"/>
+  
+  <!-- Circuit traces (bottom) -->
+  <line x1="650" y1="1050" x2="700" y2="1050" stroke="#6b8cae" stroke-width="2"/>
+  <circle cx="700" cy="1050" r="8" fill="#d4af37"/>
+  <line x1="700" y1="1050" x2="750" y2="1050" stroke="#6b8cae" stroke-width="2"/>
+  <circle cx="750" cy="1050" r="8" fill="#d4af37"/>
+  <line x1="750" y1="1050" x2="800" y2="1050" stroke="#6b8cae" stroke-width="2"/>
+  <circle cx="800" cy="1050" r="8" fill="#d4af37"/>
+  
+  <!-- Central document with brain -->
+  <rect x="400" y="300" width="400" height="600" rx="20" fill="white"/>
+  
+  <!-- Document lines -->
+  <rect x="480" y="380" width="140" height="12" rx="6" fill="#1e3a5f"/>
+  <rect x="480" y="420" width="180" height="12" rx="6" fill="#1e3a5f"/>
+  <rect x="480" y="460" width="220" height="12" rx="6" fill="#1e3a5f"/>
+  
+  <!-- Brain icon -->
+  <path d="M600 520 C580 520 565 535 565 555 C565 560 566 565 568 569 C563 571 560 576 560 582 C560 590 566 596 574 596 C576 596 578 595 580 594 C582 600 587 605 594 607 C595 612 599 616 604 616 C609 616 613 612 614 607 C621 605 626 600 628 594 C630 595 632 596 634 596 C642 596 648 590 648 582 C648 576 645 571 640 569 C642 565 643 560 643 555 C643 535 628 520 608 520 C605 520 602 520 600 521 C598 520 596 520 594 520 C592 520 590 520 588 521 C586 520 583 520 580 520 Z M594 530 C596 530 598 531 600 532 C602 531 604 530 606 530 C620 530 633 543 633 557 C633 561 632 565 630 568 L628 572 L632 574 C635 576 638 579 638 583 C638 587 635 590 631 590 C629 590 627 589 626 588 L622 585 L620 589 C618 594 614 598 609 600 L605 602 L605 606 C605 609 602 612 599 612 C596 612 593 609 593 606 L593 602 L589 600 C584 598 580 594 578 589 L576 585 L572 588 C571 589 569 590 567 590 C563 590 560 587 560 583 C560 579 563 576 566 574 L570 572 L568 568 C566 565 565 561 565 557 C565 543 578 530 592 530 Z" fill="#1e3a5f"/>
+  
+  <!-- More document lines -->
+  <rect x="480" y="680" width="240" height="12" rx="6" fill="#1e3a5f"/>
+  <rect x="480" y="720" width="200" height="12" rx="6" fill="#1e3a5f"/>
+  <rect x="480" y="760" width="160" height="12" rx="6" fill="#1e3a5f"/>
+  <rect x="480" y="800" width="120" height="12" rx="6" fill="#1e3a5f"/>
+  
+  <!-- Corner circuit elements -->
+  <circle cx="350" cy="200" r="25" fill="#d4af37"/>
+  <circle cx="850" cy="200" r="25" fill="#d4af37"/>
+  <circle cx="350" cy="1000" r="25" fill="#d4af37"/>
+  <circle cx="850" cy="1000" r="25" fill="#d4af37"/>
+  
+  <!-- Additional circuit traces -->
+  <path d="M350 200 L350 250 L400 250" stroke="#6b8cae" stroke-width="3" fill="none"/>
+  <path d="M850 200 L850 250 L800 250" stroke="#6b8cae" stroke-width="3" fill="none"/>
+  <path d="M350 1000 L350 950 L400 950" stroke="#6b8cae" stroke-width="3" fill="none"/>
+  <path d="M850 1000 L850 950 L800 950" stroke="#6b8cae" stroke-width="3" fill="none"/>
+</svg>
