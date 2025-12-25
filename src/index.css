@@ -4,32 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  * {
-    @apply antialiased;
-  }
-  
-  body {
-    @apply font-sans;
-  }
-}
-
-@layer utilities {
-  .animate-shimmer {
-    background-size: 200% auto;
-    animation: shimmer 2s linear infinite;
-  }
-  
-  @keyframes shimmer {
-    0% {
-      background-position: -200% center;
-    }
-    100% {
-      background-position: 200% center;
-    }
-  }
-}
-
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
