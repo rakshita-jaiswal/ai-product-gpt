@@ -1,21 +1,20 @@
 # AIProductGPT 🚀
 
-An AI-powered Product Requirements Document (PRD) generator that helps product teams create comprehensive PRDs instantly using Google's Gemini AI.
+An AI-powered Product Requirements Document (PRD) generator that connects you directly to a custom ChatGPT assistant specialized in creating comprehensive PRDs.
 
 ## 🌟 Features
 
-- **AI-Powered Generation**: Leverages Google's Gemini AI to create detailed PRDs
-- **Simple Interface**: Clean, intuitive UI built with React and Tailwind CSS
-- **Instant Results**: Generate comprehensive PRDs in seconds
-- **Export Options**: Copy to clipboard or download as Markdown
-- **Free to Use**: Uses Google's free Gemini API
+- **Simple Interface**: Clean, intuitive UI to input your product details
+- **Direct ChatGPT Integration**: Opens your custom PRD AI assistant with pre-filled information
+- **No API Keys Required**: Uses your existing ChatGPT account
+- **Instant Results**: Get detailed PRDs in seconds
+- **Free to Use**: No additional costs beyond your ChatGPT subscription
 
 ## 🛠️ Tech Stack
 
 - **Frontend**: React 19 + Vite
 - **Styling**: Tailwind CSS
-- **AI**: Google Gemini API
-- **Markdown**: react-markdown for rendering
+- **AI**: Custom ChatGPT Assistant (PRD AI)
 
 ## 📋 What's Included in Generated PRDs
 
@@ -35,7 +34,7 @@ Each generated PRD includes:
 
 - Node.js (v18 or higher)
 - npm or yarn
-- Google Gemini API key (free at [Google AI Studio](https://makersuite.google.com/app/apikey))
+- ChatGPT account (free or paid)
 
 ### Installation
 
@@ -50,57 +49,27 @@ cd ai-product-gpt
 npm install
 ```
 
-3. (Optional) Create a `.env` file for your API key:
-```bash
-cp .env.example .env
-# Edit .env and add your Gemini API key
-```
-
-4. Start the development server:
+3. Start the development server:
 ```bash
 npm run dev
 ```
 
-5. Open your browser and navigate to `http://localhost:5173`
+4. Open your browser and navigate to `http://localhost:5173`
 
 ## 🎯 Usage
 
 1. Click "Get Started" on the landing page
-2. Enter your Gemini API key (get a free one at [Google AI Studio](https://makersuite.google.com/app/apikey))
-3. Describe your product vision
-4. Specify your target audience
-5. Click "Generate PRD"
-6. Review, copy, or download your PRD
-
-### Getting Your API Key
-
-**IMPORTANT**: The API key in the example may be invalid or expired. You need to get your own free API key:
-
-1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
-2. Sign in with your Google account
-3. Click "Get API Key" or "Create API Key"
-4. Select "Create API key in new project" (or use existing project)
-5. Copy your new API key
-6. For local development:
-   - Create a `.env` file: `cp .env.example .env`
-   - Add your key: `VITE_GEMINI_API_KEY=your_actual_key_here`
-7. For the deployed app, enter your API key in the form
-
-**Note**:
-- Your API key is only used in your browser session and is never stored
-- The free tier includes generous limits for testing and development
-- Make sure your API key has Gemini API access enabled
+2. Enter your product vision
+3. Specify your target audience
+4. Click "Generate PRD with ChatGPT"
+5. A new tab will open with your custom ChatGPT assistant
+6. The assistant will generate your comprehensive PRD
 
 ## 📦 Deployment
 
 ### Deploy to GitHub Pages
 
-1. Install gh-pages:
-```bash
-npm install --save-dev gh-pages
-```
-
-2. Deploy:
+Deploy:
 ```bash
 npm run deploy
 ```
@@ -109,26 +78,10 @@ Your app will be available at: `https://rakshita-jaiswal.github.io/ai-product-gp
 
 ## 🔒 Security & Privacy
 
-### Current Implementation
-- API keys are entered by users and stored only in browser memory during the session
-- No API keys are committed to the repository
-- All API calls are made directly from the browser to Google's Gemini API
-- No data is stored on any intermediate servers
-
-### For Production Use
-⚠️ **Important**: For a production application, consider:
-- Creating a backend API to handle Gemini calls
-- Implementing user authentication
-- Adding rate limiting to prevent abuse
-- Using server-side environment variables
-- Implementing proper API key management
-- Adding usage monitoring and quotas
-
-### Environment Variables (Optional)
-You can optionally use environment variables for development:
-1. Copy `.env.example` to `.env`
-2. Add your API key: `VITE_GEMINI_API_KEY=your_key_here`
-3. The `.env` file is already in `.gitignore` and won't be committed
+- No API keys required
+- No data stored on any servers
+- Direct connection to ChatGPT
+- Uses your existing ChatGPT authentication
 
 ## 📁 Project Structure
 
@@ -139,17 +92,10 @@ ai-product-gpt/
 │   │   ├── LandingPage.jsx
 │   │   ├── PRDGenerator.jsx
 │   │   └── PRDDisplay.jsx
-│   ├── services/
-│   │   └── geminiService.js
 │   ├── App.jsx
 │   ├── App.css
-│   ├── index.css
 │   └── main.jsx
-├── public/
-├── index.html
 ├── package.json
-├── vite.config.js
-├── tailwind.config.js
 └── README.md
 ```
 
@@ -168,7 +114,7 @@ This project is open source and available under the MIT License.
 
 ## 🙏 Acknowledgments
 
-- Google Gemini AI for the powerful language model
+- OpenAI for ChatGPT
 - React and Vite teams for the excellent development tools
 - Tailwind CSS for the utility-first CSS framework
 

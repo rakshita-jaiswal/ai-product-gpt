@@ -3,11 +3,10 @@ import React, { useState } from 'react';
 export default function PRDGenerator({ onGenerate, isLoading }) {
   const [productVision, setProductVision] = useState('');
   const [targetAudience, setTargetAudience] = useState('');
-  const [apiKey, setApiKey] = useState(import.meta.env.VITE_GEMINI_API_KEY || '');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onGenerate(productVision, targetAudience, apiKey);
+    onGenerate(productVision, targetAudience);
   };
 
   return (
@@ -18,20 +17,10 @@ export default function PRDGenerator({ onGenerate, isLoading }) {
         </h2>
         
         <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 rounded-lg shadow-md">
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              Gemini API Key
-            </label>
-            <input
-              type="password"
-              value={apiKey}
-              onChange={(e) => setApiKey(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-              placeholder="Enter your Gemini API key"
-              required
-            />
-            <p className="text-xs text-gray-500 mt-1">
-              Your API key is only used for this session and never stored. Get a free key at <a href="https://makersuite.google.com/app/apikey" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Google AI Studio</a>
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+            <p className="text-sm text-blue-800">
+              <strong>How it works:</strong> Enter your product details below and click "Generate PRD". 
+              This will open our custom ChatGPT assistant in a new tab with your information pre-filled.
             </p>
           </div>
 
@@ -67,7 +56,7 @@ export default function PRDGenerator({ onGenerate, isLoading }) {
             disabled={isLoading}
             className="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
           >
-            {isLoading ? 'Generating PRD...' : 'Generate PRD'}
+            {isLoading ? 'Opening ChatGPT...' : 'Generate PRD with ChatGPT →'}
           </button>
         </form>
       </div>
