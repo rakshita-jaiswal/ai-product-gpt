@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function PRDGenerator({ onGenerate, isLoading }) {
   const [productVision, setProductVision] = useState('');
   const [targetAudience, setTargetAudience] = useState('');
-  const [apiKey, setApiKey] = useState('AIzaSyBZr1MhOzdgqb5pfvJiiUKL1oHHQn_k1VI');
+  const [apiKey, setApiKey] = useState(import.meta.env.VITE_GEMINI_API_KEY || '');
 
   const handleSubmit = (e) => {
     e.preventDefault();
