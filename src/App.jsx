@@ -22,7 +22,14 @@ function App() {
       setPrdContent(prd);
       setStage('display');
     } catch (error) {
-      alert('Error generating PRD: ' + error.message);
+      console.error('Full error:', error);
+      let errorMessage = 'Error generating PRD: ' + error.message;
+      
+      if (error.message.includes('404') || error.message.includes('not found')) {
+        errorMessage += '\n\nThe API key may be invalid or the model is not available. Please:\n1. Get a new API key from https://makersuite.google.com/app/apikey\n2. Make sure the API key has Gemini API access enabled\n3. Try again with your new API key';
+      }
+      
+      alert(errorMessage);
     } finally {
       setIsLoading(false);
     }

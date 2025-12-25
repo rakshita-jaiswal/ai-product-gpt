@@ -74,13 +74,22 @@ npm run dev
 
 ### Getting Your API Key
 
+**IMPORTANT**: The API key in the example may be invalid or expired. You need to get your own free API key:
+
 1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
 2. Sign in with your Google account
-3. Click "Create API Key"
-4. Copy your API key
-5. Paste it into the application when prompted
+3. Click "Get API Key" or "Create API Key"
+4. Select "Create API key in new project" (or use existing project)
+5. Copy your new API key
+6. For local development:
+   - Create a `.env` file: `cp .env.example .env`
+   - Add your key: `VITE_GEMINI_API_KEY=your_actual_key_here`
+7. For the deployed app, enter your API key in the form
 
-**Note**: Your API key is only used in your browser session and is never stored or sent to any server other than Google's Gemini API.
+**Note**:
+- Your API key is only used in your browser session and is never stored
+- The free tier includes generous limits for testing and development
+- Make sure your API key has Gemini API access enabled
 
 ## 📦 Deployment
 
