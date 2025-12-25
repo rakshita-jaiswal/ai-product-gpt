@@ -1,4 +1,4 @@
-# AIProductGPT 🚀
+# PRD.ai 🚀
 
 An AI-powered Product Requirements Document (PRD) generator that connects you directly to a custom ChatGPT assistant specialized in creating comprehensive PRDs.
 
