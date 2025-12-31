@@ -37,19 +37,19 @@ export default function LandingPage({ onGetStarted }) {
           </div>
 
           {/* Headline with Gradient Shimmer */}
-          <h1 className={`text-6xl md:text-7xl lg:text-8xl font-bold mb-6 transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <h1 className={`text-7xl md:text-8xl lg:text-9xl font-bold mb-6 transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <span className="bg-gradient-to-r from-white via-primary to-secondary bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
               PRD.ai
             </span>
           </h1>
 
           {/* Tagline */}
-          <p className={`text-2xl md:text-3xl text-text-secondary font-light mb-6 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <p className={`text-3xl md:text-4xl text-text-secondary font-light mb-6 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             Create your AI-Powered PRD
           </p>
 
           {/* Description */}
-          <p className={`text-lg md:text-xl text-text-secondary max-w-3xl mx-auto mb-12 leading-relaxed transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <p className={`text-xl md:text-2xl text-text-secondary max-w-3xl mx-auto mb-12 leading-relaxed transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             Turn simple prompts into comprehensive Product Requirements Documents in seconds. 
             <span className="text-white font-medium"> Built for PMs, loved by engineering teams.</span>
           </p>
@@ -58,7 +58,7 @@ export default function LandingPage({ onGetStarted }) {
           <div className={`flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 transition-all duration-700 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <button
               onClick={onGetStarted}
-              className="group relative px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white text-lg font-semibold rounded-xl shadow-lg shadow-primary/50 hover:shadow-2xl hover:shadow-primary/60 hover:scale-105 transition-all duration-300 animate-pulse-glow"
+              className="group relative px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white text-xl font-semibold rounded-xl shadow-lg shadow-primary/50 hover:shadow-2xl hover:shadow-primary/60 hover:scale-105 transition-all duration-300 animate-pulse-glow"
             >
               <span className="relative z-10 flex items-center gap-2">
                 Get Started
@@ -70,7 +70,7 @@ export default function LandingPage({ onGetStarted }) {
             
             <a
               href="#how-it-works"
-              className="px-8 py-4 text-white text-lg font-semibold rounded-xl border-2 border-text-secondary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300 flex items-center gap-2"
+              className="px-8 py-4 text-white text-xl font-semibold rounded-xl border-2 border-text-secondary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300 flex items-center gap-2"
             >
               See how it works
               <svg className="w-5 h-5 animate-bounce-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,7 +80,7 @@ export default function LandingPage({ onGetStarted }) {
           </div>
 
           {/* Trust Indicators */}
-          <div className={`flex flex-wrap justify-center items-center gap-6 text-text-secondary text-sm transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div className={`flex flex-wrap justify-center items-center gap-6 text-text-secondary text-base transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="flex items-center gap-2">
               <svg className="w-4 h-4 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />

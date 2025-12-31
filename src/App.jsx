@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export default function App() {
-  const [count, setCount] = useState(3);
+  const [count, setCount] = useState(5);
   const [progress, setProgress] = useState(0);
   const [isExiting, setIsExiting] = useState(false);
   const [iconDrawn, setIconDrawn] = useState(false);
@@ -13,9 +13,10 @@ export default function App() {
   useEffect(() => {
     if (count > 0) {
       const timer = setTimeout(() => setCount(count - 1), 1000);
+      // progress should complete roughly in the same time as the countdown (5s)
       const progressTimer = setInterval(() => {
         setProgress(prev => Math.min(prev + 1, 100));
-      }, 30);
+      }, 50);
       return () => {
         clearTimeout(timer);
         clearInterval(progressTimer);
@@ -106,7 +107,7 @@ export default function App() {
         </div>
 
         {/* Logo */}
-        <h1 className={`text-4xl font-bold mb-4 transition-all duration-700 delay-200 ${iconDrawn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+        <h1 className={`text-5xl font-bold mb-4 transition-all duration-700 delay-200 ${iconDrawn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
           <span className="text-white">PRD</span>
           <span className="bg-gradient-to-r from-teal-400 to-purple-500 bg-clip-text text-transparent">.ai</span>
         </h1>
@@ -149,7 +150,7 @@ export default function App() {
           <div className="absolute inset-0 flex items-center justify-center">
             <span 
               key={count}
-              className="text-5xl font-bold text-white animate-pulse"
+              className="text-6xl font-bold text-white animate-pulse"
               style={{
                 animation: 'countPop 0.3s ease-out'
               }}
